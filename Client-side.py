@@ -12,7 +12,7 @@ try:
     print('sending "%s"' % message, file=sys.stderr)
     sock.sendall(message)
 
-    amount_received = 0  # Corrected variable name
+    amount_received = 0  
     amount_expected = len(message)
 
     while amount_received < amount_expected:
